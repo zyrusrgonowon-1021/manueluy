@@ -6,6 +6,7 @@
     <title class="logo">Manuel Uy Beach Resort</title> 
     <link rel="icon" href="manueluylogo.png" type="image/png">
     <link rel="stylesheet" href="designcss.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body class="main">
     <script src="manueluyjavas.js"></script>
@@ -18,14 +19,17 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About us</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li><a href="weather.html">Check our weather</a></li>
+                <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
             </ul>
         </nav>
     </header>
 
     <main class="main-content">
         <h1>Manuel Uy Beach Resort</h1>
-        <p>Welcome to our official website! where you will see our beautiful beach views and luxurious amenities.</p>
+        <p>Welcome to our website! where you will see our beautiful beach views and camping grounds.</p>
     </main>
+
     <div class="film-container" id="filmContainer" onmouseover="pauseAutoPlay()" onmouseout="resumeAutoPlay()">
         <div class="film-track" id="filmTrack">
             <div class="film-slide">
@@ -40,4 +44,60 @@
             <div class="film-slide">
                 <img src="manueluy-4.jpg" alt="Beach view 4">
             </div>
+        </div>
+    </div>
+
+    <div class="showcase-wrapper" id="mediaShowcase">
+        <section class="video-section landscape">
+            <div class="video-container" style="aspect-ratio: 560 / 325;">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=325&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F3074429529418533%2F&show_text=false&width=560&t=0" width="560" height="325" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </section>
+        <section class="video-section landscape">
+            <div class="video-container" style="aspect-ratio: 560 / 416;">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=416&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1651178656208227%2F&show_text=false&width=560&t=0" width="560" height="416" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </section>
+        <section class="video-section portrait">
+            <div class="video-container" style="aspect-ratio: 267 / 476;">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1910014816609748%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </section>
+        <section class="video-section landscape">
+            <div class="video-container" style="aspect-ratio: 560 / 270;">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=270&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1508666350277662%2F&show_text=false&width=560&t=0" width="560" height="270" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </section>
+        <section class="video-section portrait">
+            <div class="video-container" style="aspect-ratio: 267 / 476;">
+                <iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2Freel%2F1671892937328817%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+               <p>&copy; This website is an official demo or prototype created solely for portfolio and presentation purposes.This is still not an official website of Manuel Uy Resort and is not affiliated with or endorsed by the resort owner. All rights reserved.</p>
+    </footer>
+
+    <!-- Chatbot -->
+    <button class="chatbot-toggler">
+        <span class="material-symbols-outlined">mode_comment</span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbot">
+        <header>
+            <h2>Chat Assistant</h2>
+        </header>
+        <ul class="chatbox">
+            <li class="chat incoming">
+                <span class="material-symbols-outlined">smart_toy</span>
+                <p>Hi there! 👋<br>How can I help you today?</p>
+            </li>
+        </ul>
+        <div class="chat-input">
+            <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
+            <span id="send-btn" class="material-symbols-outlined">send</span>
+        </div>
+    </div>
+</body>
 </html>
