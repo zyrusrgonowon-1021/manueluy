@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather - Manuel Uy Beach Resort</title>
+    <link rel="icon" href="manueluylogo.png" type="image/png">
+    <link rel="stylesheet" href="designcss.css">
+</head>
+<body class="main">
+    <script src="manueluyjavas.js"></script>
+    <header class="site-header">
+        <a href="index.html" class="site-logo">
+            <img src="manueluylogo.png" alt="Manuel Uy Beach Resort logo" />
+        </a>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="weather.html">Check our weather</a></li>
+                <li><button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="weather-view">
+        <section class="weather-hero" id="weatherHero">
+            <div id="weatherStatus" class="weather-status">Detecting coastal conditions...</div>
+            
+            <div id="weatherDetails" class="weather-header-display" style="display: none;">
+                <div class="weather-primary-group">
+                    <span id="weatherLargeIcon" class="weather-hero-icon">☀️</span>
+                    <div class="weather-temp-group">
+                        <h1 id="weatherLargeTemp">--°C</h1>
+                        <p id="weatherConditionText">Clear Sky</p>
+                    </div>
+                </div>
+                <div class="weather-secondary-group">
+                    <div class="weather-pill">
+                        <span class="pill-label">Feels like</span>
+                        <span id="weatherFeelsLike" class="pill-value">-</span>
+                    </div>
+                    <div class="weather-pill">
+                        <span class="pill-label">Humidity</span>
+                        <span id="weatherHumidity" class="pill-value">-</span>
+                    </div>
+                    <div class="weather-pill">
+                        <span class="pill-label">Wind</span>
+                        <span id="weatherWind" class="pill-value">-</span>
+                    </div>
+                    <div class="weather-pill">
+                        <span class="pill-label">Updated</span>
+                        <span id="weatherUpdated" class="pill-value">-</span>
+                    </div>
+                </div>
+            </div>
+            <div id="weatherError" class="weather-error" style="display: none;"></div>
+        </section>
+
+        <section class="forecast-section" id="forecastSection" style="display: none;">
+            <h2 class="section-title">3-Day Outlook</h2>
+            <div id="forecastContainer" class="forecast-grid"></div>
+        </section>
+
+        <section class="location-body-section">
+            <div class="location-header">
+                <h2>Our Location</h2>
+                <p>Visit us at Manuel Uy Beach Resort, Calatagan, Batangas.</p>
+            </div>
+            <div class="location-content-grid">
+                <div class="map-wrapper-modern">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.353347514757!2d120.62198031139455!3d13.817812195048257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd96839371725b%3A0x6734c568b209c733!2sManuel%20Uy%20Beach%20Resort!5e0!3m2!1sen!2sph!4v1740410100000!5m2!1sen!2sph" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <div class="location-info-card">
+                    <h3>Traveler's Tip</h3>
+                    <ul class="tips-list">
+                        <li><strong>Best Time:</strong> Visit during the summer months (March-May) for crystal clear waters.</li>
+                        <li><strong>Essentials:</strong> Bring plenty of sunblock and a sturdy tent for overnight camping.</li>
+                        <li><strong>Accessibility:</strong> The resort is roughly a 3-hour drive from Metro Manila.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; This website is an official demo or prototype created solely for portfolio and presentation purposes.This is still not an official website of Manuel Uy Resort and is not affiliated with or endorsed by the resort owner. All rights reserved.</p>
+    </footer>
+</body>
+</html>
